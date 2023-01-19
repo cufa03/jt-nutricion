@@ -8,12 +8,12 @@ const Navbar = () => {
 		{ label: 'Contact', route: '/contact' },
 	];
 	return (
-		<div className="relative">
-			<div className=" bg-orange-400 h-[4rem]">texto de prueba</div>
-			<nav className="bg-gray-500">
-				<ul className="flex">
+		<div className="relative w-full">
+			<div className=" bg-orange-500 h-[5em]"></div>
+			<nav className="absolute bg-gray-400 h-[4em] w-[90%] top-12 left-0 right-0 mx-auto">
+				<ul className="flex items-end">
 					{links.map((link) => (
-						<li className="text-red-500 border-2 mx-1" key={link.route}>
+						<li className="mx-1" key={link.route}>
 							<Link href={link.route}>{link.label}</Link>
 						</li>
 					))}
