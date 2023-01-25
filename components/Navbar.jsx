@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from 'src/app/images/nutri-logo.png';
+// import Image from 'next/image';
+// import logo from 'src/app/images/nutri-logo.png';
 
 const Navbar = () => {
 	const links = [
@@ -10,10 +10,11 @@ const Navbar = () => {
 		{ label: 'ABOUT', route: '/about' },
 		{ label: 'CONTACT', route: '/contact' },
 	];
+
 	return (
 		<div className="relative w-full">
 			<div className=" bg-orange-500 h-[5.5em] ">
-				<nav className="absolute bg-green-200  h-[4em] w-[80%] top-12 left-0 right-0 mx-auto flex items-center justify-between px-10 overflow-hidden">
+				<nav className="absolute bg-white  h-[4em] w-[80%] top-12 left-0 right-0 mx-auto flex items-center justify-between px-10 overflow-hidden">
 					<div className="overflow-hidden">
 						{/* <Image
 							src={logo}
@@ -26,10 +27,15 @@ const Navbar = () => {
 					</div>
 
 					<div>
-						<ul className="flex justify-around w-fit ">
+						<ul className="flex justify-around w-fit">
 							{links.map((link) => (
 								<li className="mx-8" key={link.route}>
-									<Link href={link.route}>{link.label}</Link>
+									<Link
+										className="font-bold hover:border-b-2 hover:border-orange-400 pb-1 "
+										href={link.route}
+									>
+										{link.label}
+									</Link>
 								</li>
 							))}
 						</ul>
