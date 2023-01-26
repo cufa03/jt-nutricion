@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	return (
 		<div className="relative w-full z-10">
-			<div className=" bg-orange-500 h-[5.5em] ">
+			<div className=" bg-orange-500/80 h-[5.5em] ">
 				<nav className="absolute bg-white  h-[4em] w-[80%] top-12 left-0 right-0 mx-auto flex items-center justify-between px-10 overflow-hidden">
 					<div className="overflow-hidden">
 						{/* <Image
