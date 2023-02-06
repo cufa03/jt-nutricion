@@ -13,11 +13,11 @@ const page = () => {
 
 	return (
 		<div className="pt-[30px]">
-			<div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+			<div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-center mx-auto items-center'>
         <div>
-          <h3>
+          {/* <h3 className='p-10'>
             Lorem ipsum
-          </h3>
+          </h3> */}
         </div>
         <div className='flex flex-col space-y-10'>
           {/* <h4 className='text-4xl font-semibold text-center mt-24'>
