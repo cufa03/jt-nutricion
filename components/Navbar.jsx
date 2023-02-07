@@ -13,7 +13,7 @@ const Navbar = () => {
 	return (
 		<div className="relative w-full">
 			<div className=" bg-orange-500 h-[5.5em] ">
-				<nav className="absolute bg-green-200  h-[4em] w-[80%] top-12 left-0 right-0 mx-auto flex items-center justify-between px-10 overflow-hidden">
+				<nav className="absolute bg-gray-100  h-[4em] w-[80%] top-12 left-0 right-0 mx-auto flex items-center justify-between px-10 overflow-hidden">
 					<div className="overflow-hidden">
 						{/* <Image
 							src={logo}
